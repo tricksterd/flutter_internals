@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:internals/keys/todo_item.dart';
+// import 'package:internals/keys/todo_item.dart';
+import 'package:internals/keys/checkable_todo_item.dart';
 import 'package:internals/models/todo.dart';
 
 class Keys extends StatefulWidget {
@@ -58,7 +59,8 @@ class _KeysState extends State<Keys> {
           child: Column(
             children: [
               for (final todo in _orderedTodos)
-                TodoItem(todo.text, todo.priority)
+                // TodoItem(todo.text, todo.priority)
+                CheckableTodoItem(todo.text, todo.priority)
             ],
           ),
         )
