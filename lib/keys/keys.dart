@@ -60,7 +60,8 @@ class _KeysState extends State<Keys> {
             children: [
               for (final todo in _orderedTodos)
                 // TodoItem(todo.text, todo.priority)
-                CheckableTodoItem(todo.text, todo.priority)
+                CheckableTodoItem(
+                    key: ValueKey(todo.text), todo.text, todo.priority)
             ],
           ),
         )
