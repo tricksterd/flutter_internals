@@ -1,3 +1,3 @@
 # internals
 
-A new Flutter project.
+Basic flutter app for understanding flutter trees, widgets and states.
